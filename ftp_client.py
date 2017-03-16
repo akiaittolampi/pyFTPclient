@@ -37,5 +37,9 @@ while session:
 		openfile.close()
 		print "OK"
 
+	elif command=="help":
+		print " dir = list files \n put = copy files to ftp \n get = copy files to localdir \n quit = leave program \n help = list commands " 
+		
+
 	else:
 		print "Command not found"
