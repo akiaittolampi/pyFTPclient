@@ -38,8 +38,16 @@ while session:
 		print "OK"
 
 	elif command=="help":
-		print " dir = list files \n put = copy files to ftp \n get = copy files to localdir \n quit = leave program \n help = list commands " 
-		
+		print " dir = list files \n put = copy files to ftp \n get = copy files to localdir \n quit = leave program \n help = list commands \n cd = change dir \n pwd = print workdir "
+ 
+	elif "cd" in command:
+		filepath = command
+		first, _,rest = filepath.partition(" ")
+		last = rest
+		ftp.cwd(last)
 
+	elif command == "pwd":
+		print ftp.pwd()
+		
 	else:
 		print "Command not found"
