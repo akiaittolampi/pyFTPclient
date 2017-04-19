@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import ftplib, sys
 
-print "Please enter your credentials:"
+#print "Please enter your credentials:"
 srv = raw_input("Server: ")
 user = raw_input("Username: ")
 passwd = raw_input("Password: ")
