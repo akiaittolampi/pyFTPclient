@@ -2,7 +2,7 @@
 
 import pexpect
 
-child = pexpect.spawn("python pyFTPclient/scripts/ftp_client.py")
+child = pexpect.spawn("python ../scripts/ftp_client.py")
 
 child.expect("Server: ")
 child.sendline("localhost")
