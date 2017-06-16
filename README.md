@@ -2,7 +2,7 @@
 
 Python FTP Client 
 
-Move files between client and server. See docs directory for more info. 
+Move files between client and server. See docs for more info. 
 
 
 Copyright 2017 
